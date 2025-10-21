@@ -1,11 +1,11 @@
 <?php
 if($nota >= 7 ){
-    echo "aprovado"
+    echo "aprovado";
 }
 elseif($nota >=5 ){
-    echo "recuperação"
+    echo "recuperação";
 }
 else{
-    echo "reprovado"
+    echo "reprovado";
 }
 ?>
