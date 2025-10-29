@@ -1,0 +1,53 @@
+body{
+    box-sizing: border-box;
+    color: #00bcd4;
+    background-color: black;
+    font-family: sans-serif;
+
+}
+h1{
+    color: white;
+}
+header h1{
+    text-align: center;
+}
+
+main section form{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+
+
+}
+main section form input,select {
+    width: 80%;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border-radius: 16px;
+
+
+}
+main section textarea{
+    height: 50%;
+    width: 80%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+main section form label{
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+
+}
+footer span {
+    text-align: center;
+}
