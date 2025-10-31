@@ -11,16 +11,16 @@
     <main>
         <section>
             <form action="produto.php" method="post">  
-                <label for="nome_produto">Nome do Produto</label>
-                <input type="text" name="nome_produto">
+                <label for="nome_cliente">Seu nome</label>
+                <input type="text" name="nome_cliente">
                 <label for="telefone_contato">Telefone Para Contato</label>
-                <input type="tel" name="telefone_contato" required>
+                <input type="number" name="telefone_contato" required>
                 <label for="tipo_do_aparelho"> Tipo Do Seu Aparelho</label>
                 <select name="tipo_do_aparelho" required>
                     <option value="Geladeira">Geladeira</option>
-                    <option value="Micro_Ondas">micros ondas</option>
+                    <option value="Micro Ondas">micros ondas</option>
                     <option value="fogão">fogão</option>
-                    <option value="Maquina_de_Lavar">Maquina de Lavar</option>
+                    <option value="Maquina de Lavar">Maquina de Lavar</option>
                 </select>
                 <label for="data_preferida"> Data do atedimento </label>
                 <input type="date" name="data_preferida" required>
@@ -31,7 +31,7 @@
         </section>
     </main>
     <footer>
-        <span> feito por Gabriel,Marco Túlio e Emanuelly</span>
+        <span> feito por Gabriel,Marco Túlio, Emanuelly e João pedro</span>
     </footer>
 </body>
 </html>

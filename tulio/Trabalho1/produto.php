@@ -71,7 +71,7 @@ a {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 15px;
-    background-color: #ffffffff; 
+    background-color: #00bcd4; 
     color: #000; 
     text-decoration: none; 
     border-radius: 5px;
@@ -84,13 +84,14 @@ a {
 
 footer span {
     font-style: italic;
+    margin-top: 20px
 }
     </style>
 </head>
 <body>
     <?php 
-        if(isset($_POST['nome_produto'])){
-            $nomeDOProduto = $_POST['nome_produto'];
+        if(isset($_POST['nome_cliente'])){
+            $nomeDOcliente = $_POST['nome_cliente'];
             $telefone = $_POST['telefone_contato'];
             $tipoDoAparelho = $_POST['tipo_do_aparelho'];
             $data = $_POST['data_preferida'];
@@ -103,7 +104,7 @@ footer span {
         <section>
             <article>
                 <h1> Agendamento </h1>
-                <p> Produto: <?php echo $nomeDOProduto ?> </p>
+                <p> Nome do cliente: <?php echo $nomeDOcliente ?> </p>
                 <p> Telefone do cliente: <?php echo $telefone?></p>
                 <p>tipo de aparelho: <?php echo $tipoDoAparelho ?></p>
                 <p>melhor data pra o cliente: <?php echo $data ?></p>
@@ -115,6 +116,6 @@ footer span {
             </article>
         </section>
     </main>
-    <footer><span> feito por Gabriel, Marco Túlio e Emanuelly </span></footer>
+    <footer><span> feito por Gabriel, Marco Túlio, Emanuelly e João Pedro</span></footer>
 </body>
 </html>
