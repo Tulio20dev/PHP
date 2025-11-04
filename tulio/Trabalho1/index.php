@@ -17,6 +17,7 @@
                 <input type="number" name="telefone_contato" required>
                 <label for="tipo_do_aparelho"> Tipo Do Seu Aparelho</label>
                 <select name="tipo_do_aparelho" required>
+                    <option value="selecione">Selecione</option>
                     <option value="Geladeira">Geladeira</option>
                     <option value="Micro Ondas">micros ondas</option>
                     <option value="fogão">fogão</option>

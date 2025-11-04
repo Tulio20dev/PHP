@@ -89,6 +89,7 @@ footer span {
     </style>
 </head>
 <body>
+    <header><h1>Só Black consertos</h1></header>
     <?php 
         if(isset($_POST['nome_cliente'])){
             $nomeDOcliente = $_POST['nome_cliente'];
@@ -96,10 +97,34 @@ footer span {
             $tipoDoAparelho = $_POST['tipo_do_aparelho'];
             $data = $_POST['data_preferida'];
             $descrição = $_POST['descrição'];
+
+            $conn = mysqli_connect("localhost","root","aluno","conserto","3307");
+
+            if ($conn -> connect_error) {
+                die("<p style='color:red;'>Erro na conexão com  o banco de dados: ". $conn -> connect_error . "</p>");
         }
+        
+        $sql = "INSERT INTO conserto (nome,telefone,tipoDoAparelho,data,descrição)
+                VALUES ('$nomeDOcliente','$telefone','$tipoDoAparelho','$data','$descrição')";
+
+
+        if ($conn -> query($sql) === TRUE) {
+            echo "<p><strong>Nome do cliente:</strong> $nomeDOcliente</p>";
+            echo "<p><strong>Telefone :</strong> $telefone</p>";
+            echo "<p><strong>Tipo de aparelho:</strong>$tipoDoAparelho</p>";
+            echo "<p><strong>Data preferida:</strong>$data </p>";
+            echo "<p><strong>Descrição do problema:</strong>$descrição </p>";
+            echo "<p style='color:green; font-weight:bold;'>✅ Agendamento salvo com sucesso no banco de dados! </p><br>";
+        } else {
+            echo "<p style='color:red;'>❌ Erro ao salvar: " . $conn->error . "</p>";
+        }
+        
+        $conn->close();
+    }
 
     ?>
-    <header><h1>Só Black consertos</h1></header>
+    <a href="index.php"> Voltar ao formulario</a>
+    
     <main>
         <section>
             <article>
